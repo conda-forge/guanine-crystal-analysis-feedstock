@@ -1,11 +1,11 @@
-About guanine-crystal-analysis
-==============================
+About guanine-crystal-analysis-feedstock
+========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/guanine-crystal-analysis-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/biapol/guanine-crystal-analysis
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/guanine-crystal-analysis-feedstock/blob/main/LICENSE.txt)
 
 Summary: A plugin for the guanine crystal segmentation, classification and characterization in the zebrafish eye
 
