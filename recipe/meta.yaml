@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/guanine-crystal-analysis-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/guanine-crystal-analysis-{{ version }}.tar.gz
   sha256: 105c0b6b0fc825476a94931a9992926cc17eb62518e343598eb0b12f7595d8e9
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - apoc-backend
     - magicgui
@@ -27,7 +27,7 @@ requirements:
     - numpy
     - pandas
     - pyclesperanto-prototype
-    - python >=3.8
+    - python >={{ python_min }}
     - qtpy
     - scikit-image
     - scikit-learn
@@ -41,6 +41,7 @@ test:
   requires:
     - pip
     - pocl
+    - python {{ python_min }}
 
 about:
   home: https://github.com/biapol/guanine-crystal-analysis
